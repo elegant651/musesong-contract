@@ -1,0 +1,17 @@
+[package]
+name = "MuseNFT"
+version = "1.0.0"
+upgrade_policy = "compatible"
+
+[addresses]
+musenft_addr = "_"
+
+[dependencies]
+AptosFramework = { git = "https://github.com/aptos-labs/aptos-core.git", rev = "main", subdir = "aptos-move/framework/aptos-framework"}
+AptosTokenObjects = {git = "https://github.com/aptos-labs/aptos-core.git", rev = "main", subdir = "aptos-move/framework/aptos-token-objects"}
+
+[dev-dependencies]
+
+[dev-addresses]
+musenft_addr = "0x100"
+marketplace_addr = "0x111"
